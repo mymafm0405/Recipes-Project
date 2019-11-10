@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'course-project';
+  showComponent = '';
+  onRecipesClicked(eventData) {
+    this.showComponent = eventData.link;
+  }
+  onShoppingClicked(eventData) {
+    this.showComponent = eventData.link;
+  }
 }
